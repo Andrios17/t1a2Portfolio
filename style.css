@@ -45,6 +45,10 @@ body {
     align-items: center;
 }
 
+.navWrapper ul li:hover {
+    cursor: pointer;
+}
+
 .navWrapper ul li a {
     text-decoration: none;
     font-size: 1em;
@@ -76,11 +80,44 @@ body {
     top: -5%;   
 }
 
-.languages {
-    
+.footerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    font-family: "Chakra Petch", sans-serif;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    color: white;
+}
+
+.footerWrapper h3 {
+    margin-left: 7px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between
+}
+
+.socials img {
+    margin-right: 20px;
 }
 
 
+
+.socials img {
+    display: block;
+    height: 5vh;
+}
+
+.socials img:hover {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 699px) {
     .navWrapper h1 {
