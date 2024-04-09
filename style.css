@@ -8,7 +8,6 @@
 
 body {
     font-family: "Ubuntu", sans-serif;
-    background-image: url('images/heroImage.jpg');
 }
 
 .navWrapper {
@@ -17,7 +16,8 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(178, 100%, 50%);
     width: 100vw;
     height: 10vh;
     font-family: "Chakra Petch", sans-serif;
@@ -30,13 +30,6 @@ body {
     margin-bottom: 2px;
 }
 
-/* .navWrapper img {
-    position: absolute;
-    max-width: 10%;
-    left: 33.5%
-} */
-
-
 .navWrapper ul li {
     display: inline-block;
     padding: 10px;
@@ -45,14 +38,15 @@ body {
     align-items: center;
 }
 
-.navWrapper ul li:hover {
+.navWrapper ul li a:hover {
     cursor: pointer;
+    color: white;
 }
 
 .navWrapper ul li a {
     text-decoration: none;
     font-size: 1em;
-    color: black;
+    color: hsl(178, 100%, 50%);
 }
 
 .heroWrapper {
@@ -63,8 +57,21 @@ body {
     text-align: center;
     width: 100vw;
     height: 80vh;
-    /* background-image: url('images/heroImage.jpg');
-    background-size: 100% 100%; */
+    background-color: hsl(216, 50%, 16%);
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+.profileImage {
+    display:none;
 }
 
 #profilePic{
@@ -72,12 +79,29 @@ body {
     border-radius: 50%;
     max-width: 50%;
     max-height: 50%;
-    top: -10%;
+    top: -5.6%;
+    border: solid 5px aqua;
+    filter: drop-shadow( -10px -7px 9px aqua);
 }
 
-.intro  {
+.intro h1 {
     position: relative;
-    top: -5%;   
+    top: -10%;
+    color: aqua;   
+}
+
+.intro h3 {
+    position: relative;
+    top: -5%;
+    color: white; 
+    font-weight: 300; 
+    margin-top: 10px;
+    margin-bottom: 14px; 
+}
+
+.intro h3:nth-of-type(2) {
+    color: aqua; 
+    font-weight: bold;
 }
 
 .footerWrapper {
@@ -86,17 +110,18 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: hsl(217, 54%, 11%);
     width: 100vw;
     height: 10vh;
     font-family: "Chakra Petch", sans-serif;
     flex-wrap: nowrap;
     font-weight: bold;
-    color: white;
+    color: aqua;
 }
 
 .footerWrapper h3 {
     margin-left: 7px;
+    text-align: center;
 }
 
 .socials {
@@ -108,8 +133,6 @@ body {
     margin-right: 20px;
 }
 
-
-
 .socials img {
     display: block;
     height: 5vh;
@@ -119,7 +142,7 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 749px) {
     .navWrapper h1 {
         display: none;
     }
@@ -130,5 +153,68 @@ body {
 
     .navWrapper img {
         display: none;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .navWrapper h1 {
+        display: none;
+    }
+
+    .navWrapper {
+        justify-content: center;
+    }
+
+    .navWrapper img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 439px) {
+   .navWrapper ul li a  {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .heroWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50vw;
+        height: 80vh;
+    }
+
+     .profileImage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50vw;
+        height: 80vh;
+     }
+
+    #profilePic {
+        display: None
+    }
+
+    #profilePic1 {
+        width: 75%;
+        border-radius: 50%;
+        border: solid 5px aqua;
+        filter: drop-shadow( -10px -7px 9px aqua);
     }
 }
