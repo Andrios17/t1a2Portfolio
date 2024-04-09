@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: hsl(217, 54%, 11%);
+    background-color: hsl(217, 54%, 11%, 50%);
     color: hsl(178, 100%, 50%);
     width: 100vw;
     height: 10vh;
@@ -39,6 +39,17 @@ body {
     list-style-type: none;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
+}
+
+.navWrapper ul li:nth-of-type(5) {
+    border: 2px solid aqua;
+    margin-right: 10px;
+}
+
+.navWrapper ul li:hover {
+    transform: scale(1.2);
+    
 }
 
 .navWrapper ul li a:hover {
@@ -90,7 +101,7 @@ body {
 .intro h1 {
     position: relative;
     top: -10%;
-    color: aqua;   
+    color: #00ffff;   
 }
 
 .intro h3 {
@@ -165,7 +176,6 @@ body {
     background-color: hsl(216, 50%, 16%);
     color: white;
     margin-bottom: 10px;
-    font-size: ;
 }
 
 .project1, .project2, .project3 {
