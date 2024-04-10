@@ -158,7 +158,7 @@ body {
     cursor: pointer;
 }
 
-#projectsHeader {
+#header {
     text-align: center;
     background-color: hsl(216, 50%, 16%);
     color: aqua;
@@ -226,21 +226,196 @@ body {
     margin-bottom: 20px;
 }
 
-
-@media screen and (max-width: 749px) {
-    .navWrapper h1 {
-        display: none;
-    }
-
-    .navWrapper {
-        justify-content: center;
-    }
-
-    .navWrapper img {
-        display: none;
-    }
+.aboutMeHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    background-color: hsl(216, 50%, 16%);
+    color: white;
 }
 
+.aboutMeHeader img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    filter: drop-shadow( -10px -7px 9px aqua);
+}
+
+.aboutMeSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-image: url(images/backgroundAboutMe.avif);
+    background-size: cover;
+    color: aqua;
+    font-weight:900;
+}
+
+.aboutMeSection a {
+    text-decoration: none;
+    color: aqua;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 1%;
+    border: 1px solid aqua;
+}
+
+.mySkillsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    background-color: hsl(216, 50%, 16%);
+    color: white;
+    margin-bottom: 10px;
+}
+.mySkillsContainer img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.mySkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    background-color: hsl(217, 54%, 11%);
+    border-radius: 20px;
+    font-size: 1em;
+    margin-top: 20px;
+    line-height: 2;
+    color:aqua
+}
+.mySkills p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.myInterests {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    background-color: hsl(217, 54%, 11%);
+    border-radius: 20px;
+    font-size: 1em;
+    margin-top: 20px;
+    line-height: 2;
+    color:aqua
+}
+.myInterests p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#journeyHeader {
+    text-align: center;
+    background-color: hsl(216, 50%, 16%);
+    color: aqua;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.thePast, .thePresent, .theFuture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    background-color: hsl(217, 54%, 11%);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+.thePast h1, .thePresent h1, .theFuture h1 {
+    color: aqua;
+    margin-bottom: 10px;
+}
+
+.thePast p, .thePresent p, .theFuture p{ 
+    font-size: 0.9em;
+    color: white;
+}
+
+.aboutMeImages {
+    display: none;
+}
+
+.contactMeWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    background-color: hsl(216, 50%, 16%);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    background-color: hsl(217, 54%, 11%);
+    border-radius: 20px;
+    font-size: 1em;
+    line-height: 2;
+}
+
+#contactHeader {
+    text-align: center;
+    background-color: hsl(216, 50%, 16%);
+    color: aqua;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.contactMe h1 {
+    color: aqua;
+    margin-top: 10px;
+    
+}
+
+.contactMe h4 {
+    color: white;
+}
+
+#phoneNumber {
+    margin-bottom: 10px;
+}
+
+
 @media screen and (max-width: 749px) {
     .navWrapper h1 {
         display: none;
@@ -253,8 +428,6 @@ body {
     .navWrapper img {
         display: none;
     }
-
-    
 }
 
 @media screen and (max-width: 439px) {
@@ -303,9 +476,7 @@ body {
         border-radius: 50%;
         border: solid 5px aqua;
         filter: drop-shadow( -10px -7px 9px aqua);
-    }
-
-    
+    }    
 }
 
 @media screen and (min-width: 1200px) {
@@ -329,4 +500,74 @@ body {
         border-radius: 10%;
         line-height: 1.6;
     }
+}
+
+@media screen and (min-width: 600px) {
+    .aboutMeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        background-color: hsl(216, 50%, 16%);
+        color: white;
+        font-size: 1.25em;
+    }
+
+    .wideScreen {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+    }
+
+
+    .thePast, .thePresent, .theFuture {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45vw;
+        background-color: hsl(217, 54%, 11%);
+        border-radius: 15px;
+        margin-bottom: 15px;
+        line-height: 2;
+    }
+
+    .aboutMeImages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 40vw;
+        background-color: hsl(216, 50%, 16%);
+        color: white;
+        font-size: 1.25em;
+    }
+
+    .aboutMeImages #law {
+        max-width: 80%;
+        height: 50%;
+        border: 5px solid aqua;
+        filter: drop-shadow( -10px -7px 9px aqua);
+    }
+
+    .aboutMeImages #coderAcademy {
+        max-width: 80%;
+        height: 50%;
+        border: 5px solid aqua;
+        filter: drop-shadow( 10px 7px 9px aqua);
+    }
+
+    .aboutMeImages #fullStack {
+        max-width: 100%;
+        height: 50%;
+        border: 5px solid aqua;
+        filter: drop-shadow( -10px -7px 9px aqua);
+
+    }   
 }
