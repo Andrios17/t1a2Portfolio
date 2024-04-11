@@ -166,7 +166,23 @@ body {
     margin-bottom: 10px;
 }
 
+.projectsHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(216, 50%, 16%);
+    color: white;
+    font-weight: 900;
+    background-image:url("images/projectsHero.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 .projectsContainer {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -210,6 +226,7 @@ body {
     max-width: 80%;
     border-radius: 15px;
     margin-bottom: 20px;
+    filter: drop-shadow( -10px -7px 13px aqua);
 }
 
 .project2 img {
@@ -217,6 +234,7 @@ body {
     max-width: 80%;
     border-radius: 15px;
     margin-bottom: 20px;
+    filter: drop-shadow( -10px -7px 13px aqua);
 }
 
 .project3 img {
@@ -224,6 +242,7 @@ body {
     max-width: 92.5%;
     border-radius: 15px;
     margin-bottom: 20px;
+    filter: drop-shadow( -10px -6px 7px aqua);
 }
 
 .aboutMeHeader {
@@ -265,8 +284,16 @@ body {
     font-size: 20px;
     margin-top: 50px;
     padding: 1%;
-    border: 1px solid aqua;
+    border: 3px solid aqua;
+    transition: 0.3s;
 }
+
+.aboutMeSection a:hover {
+    transform: scale(1.2);
+    color: white;
+    border-color: white;
+}
+
 
 .mySkillsContainer {
     display: flex;
@@ -296,8 +323,9 @@ body {
     font-size: 1em;
     margin-top: 20px;
     line-height: 2;
-    color:aqua
+    color:aqua;
 }
+
 .mySkills p {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -414,6 +442,8 @@ body {
 #phoneNumber {
     margin-bottom: 10px;
 }
+
+
 
 
 @media screen and (max-width: 749px) {
@@ -551,14 +581,14 @@ body {
 
     .aboutMeImages #law {
         max-width: 80%;
-        height: 50%;
+        max-height: 80%;
         border: 5px solid aqua;
         filter: drop-shadow( -10px -7px 9px aqua);
     }
 
     .aboutMeImages #coderAcademy {
         max-width: 80%;
-        height: 50%;
+        max-height: 80%;
         border: 5px solid aqua;
         filter: drop-shadow( 10px 7px 9px aqua);
     }
