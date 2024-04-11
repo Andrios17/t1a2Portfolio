@@ -443,7 +443,107 @@ body {
     margin-bottom: 10px;
 }
 
+.blogHeader {
+    text-align: center;
+    color: aqua;
+    width: 100vw;
+    height: 10vh;
+}
 
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: Aqua;
+}
+
+.blogPosts li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75vw;
+    height: 30vh;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: aqua;
+    background-color:hsl(217, 54%, 11%);
+    font-weight: 900;
+    border-radius: 20%;
+    background-image: url("https://picsum.photos/250");
+    background-size: cover;
+    border: 2px solid aqua;
+    filter: drop-shadow( -10px -7px 9px aqua);
+}
+
+.blogPosts a {
+    text-decoration: none;
+    color: Aqua;
+    transition: .3s;
+    border: 1px solid aqua;
+    padding: 2%;
+}
+
+.blogPosts a:hover {
+    transform: scale(1.2);
+    color: white;
+    border-color: white;
+}
+
+.blogImages{
+    display: none;;
+}
+
+.blogPublishedContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 10px;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75vw;
+    height: 20vh;
+    color: Aqua;
+    background-color: white;
+    
+}
+
+.imgContainer img {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    border: 2px solid aqua;
+    filter: drop-shadow( -10px -7px 9px aqua);
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 75vw;
+    color: Aqua;
+    background-color: hsl(217, 54%, 11%);
+    line-height:2;
+    border-radius:20px;
+
+}
 
 
 @media screen and (max-width: 749px) {
@@ -530,74 +630,199 @@ body {
         border-radius: 10%;
         line-height: 1.6;
     }
+
+    .imgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 75vw;
+        height: 43vh;
+        color: Aqua;
+        background-color: white;
+        
+    }
 }
 
 @media screen and (min-width: 600px) {
-    .aboutMeContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100vw;
-        background-color: hsl(216, 50%, 16%);
-        color: white;
-        font-size: 1.25em;
+        .aboutMeContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100vw;
+            background-color: hsl(216, 50%, 16%);
+            color: white;
+            font-size: 1.25em;
+        }
+
+        .wideScreen {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            width: 100vw;
+        }
+
+
+        .thePast, .thePresent, .theFuture {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45vw;
+            background-color: hsl(217, 54%, 11%);
+            border-radius: 15px;
+            margin-bottom: 15px;
+            line-height: 2;
+        }
+
+        .aboutMeImages {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 40vw;
+            background-color: hsl(216, 50%, 16%);
+            color: white;
+            font-size: 1.25em;
+        }
+
+        .aboutMeImages #law {
+            max-width: 80%;
+            max-height: 80%;
+            border: 5px solid aqua;
+            filter: drop-shadow( -10px -7px 9px aqua);
+        }
+
+        .aboutMeImages #coderAcademy {
+            max-width: 80%;
+            max-height: 80%;
+            border: 5px solid aqua;
+            filter: drop-shadow( 10px 7px 9px aqua);
+        }
+
+        .aboutMeImages #fullStack {
+            max-width: 100%;
+            height: 50%;
+            border: 5px solid aqua;
+            filter: drop-shadow( -10px -7px 9px aqua);
+
+        }
+
+        .imgContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 75vw;
+            height: 35vh;
+            color: Aqua;
+            background-color: white;
+            
+        }
     }
 
-    .wideScreen {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        width: 100vw;
+    @media screen and (min-width: 1000px) {
+        .blogContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            width: 100vw;
+            background-color: hsl(216, 50%, 16%);
+            color: white;
+            font-size: 1.25em;
+        }
+
+        .blogPosts {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            width: 50vw;
+            height: 150vh;
+            background-image: hsl(217, 54%, 11%);
+        }
+
+
+        .blogPosts li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 50vw;
+            height: 30vh;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 15px;
+            color: aqua;
+            background-color:hsl(217, 54%, 11%);
+            font-weight: 900;
+            border-radius: 20%;
+            background-image: none;
+        }
+
+        .blogImages {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 50vw;
+            height: 150vh;
+            background-image: hsl(217, 54%, 11%);
+        }
+
+        .blogImgs{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            width: 50vw;
+            height: 150vh;
+            background-image: hsl(217, 54%, 11%);
+        }
+
+        .blogImages img {
+            filter: drop-shadow( -10px -7px 9px aqua);
+            max-width: 100%;
+            max-height: 90%;
+            border: 4px solid aqua;
+        }
+
+        .imgContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 75vw;
+            height: 45vh;
+            color: Aqua;
+            background-color: white;
+        }
     }
 
+    @media screen and (min-width: 1400px) {
+        .imgContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 75vw;
+            height: 50vh;
+            color: Aqua;
+            background-color: white;
+        }
 
-    .thePast, .thePresent, .theFuture {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 45vw;
-        background-color: hsl(217, 54%, 11%);
-        border-radius: 15px;
-        margin-bottom: 15px;
-        line-height: 2;
     }
-
-    .aboutMeImages {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 40vw;
-        background-color: hsl(216, 50%, 16%);
-        color: white;
-        font-size: 1.25em;
-    }
-
-    .aboutMeImages #law {
-        max-width: 80%;
-        max-height: 80%;
-        border: 5px solid aqua;
-        filter: drop-shadow( -10px -7px 9px aqua);
-    }
-
-    .aboutMeImages #coderAcademy {
-        max-width: 80%;
-        max-height: 80%;
-        border: 5px solid aqua;
-        filter: drop-shadow( 10px 7px 9px aqua);
-    }
-
-    .aboutMeImages #fullStack {
-        max-width: 100%;
-        height: 50%;
-        border: 5px solid aqua;
-        filter: drop-shadow( -10px -7px 9px aqua);
-
-    }   
-}
