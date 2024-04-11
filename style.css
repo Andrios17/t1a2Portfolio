@@ -448,6 +448,7 @@ body {
     color: aqua;
     width: 100vw;
     height: 10vh;
+    margin-top: 10px;
 }
 
 .blogContainer {
@@ -472,6 +473,7 @@ body {
     height: 30vh;
     margin-bottom: 10px;
     margin-top: 10px;
+    margin-left: 10px;
     color: aqua;
     background-color:hsl(217, 54%, 11%);
     font-weight: 900;
@@ -497,7 +499,54 @@ body {
 }
 
 .blogImages{
-    display: none;;
+    display: none;
+}
+
+.blogNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: hsl(217, 54%, 11%, 50%);
+    color: hsl(178, 100%, 50%);
+    width: 100vw;
+    height: 10vh;
+    font-family: "Chakra Petch", sans-serif;
+    flex-wrap: nowrap;
+    font-weight: bold;
+    position: sticky;
+
+}
+
+.blogNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.blogNav ul li{
+    display: inline-block;
+    padding: 10px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogNav ul a{
+    display: inline-block;
+    padding: 10px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    color: aqua;
+}
+
+.blogNav ul a:hover {
+    transform: scale(1.2);
+    color: white;
 }
 
 .blogPublishedContainer {
@@ -508,7 +557,9 @@ body {
     text-align: center;
     width: 100vw;
     margin-bottom: 10px;
+    margin-top: 10p;
 }
+
 
 .imgContainer {
     display: flex;
@@ -520,7 +571,7 @@ body {
     height: 20vh;
     color: Aqua;
     background-color: white;
-    
+    margin-top: 10px;
 }
 
 .imgContainer img {
@@ -824,5 +875,10 @@ body {
             color: Aqua;
             background-color: white;
         }
-
+    }
+    
+        @media  screen and (min-width: 0px) and (max-width: 675px) {
+         .blogNav{
+            display: none;
+         }
     }
