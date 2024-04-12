@@ -4,9 +4,17 @@
 
 ## Description
 
-This portfolio was completed as an assessment item as part of the Higher Education Diploma offered by Coder Academy. All material learnt throughout weeks 1 and 2 of the diploma have been utilised to complete this project. The tech stack used for this project includes both **HTML5 and CSS**. I completed this assignment with the mindset of a seasoned web developer who is aiming to utilise this portfolio to reach perspective employers in the industry with the hopes of gaining employment as a full-stack web developer in a small to medium software development company.
+This portfolio was completed as an assessment item as part of the Higher Education Diploma offered by Coder Academy. All material learnt throughout weeks 1 and 2 of the diploma have been utilised to complete this project. The tech stack used for this project includes both **HTML5 and CSS**.
 
-**This project features  a total of nine HTML documents that all link together and which have all been designed with a mobile first design to provide a seemless user experience.** It is simple in its design, and this is done with the purpose of creating a portfolio that focuses on providing key information to perspective employers in a way that does not take away from the information that is being conveyed.
+This portfolio was completed while relying heavily on CSS Flexbox as both a way of creating a responsive product but also to test myself with the material learnt thus far in the Coder Academy course.
+
+```display: flexbox;```
+
+I completed this assignment with the mindset of a junior web developer who is aiming to utilise this portfolio to reach perspective employers in the industry with the hopes of gaining employment as a full-stack web developer in a small to medium software development company. As such, the target audience is hiring managers in those environments.
+
+**This project features  a total of nine HTML documents that all link together and which have all been designed with a mobile first design to provide a seemless user experience (media quries were set using the Google Chrome inspect feature and focused on making sure the portfolio was responsive to all device types listed in that feature).**
+
+It is simple in its design, and this is done with the purpose of creating a portfolio that focuses on providing key information to perspective employers in a way that does not take away from the information that is being conveyed.
 
 ## Sightmap of the portfolio
 
@@ -14,15 +22,19 @@ This portfolio was completed as an assessment item as part of the Higher Educati
 
 ### General Navigation around the portfolio
 
-As seen in the above sightmap of the portfolio, the portfolios navigation is quite simple, with all pages linkning together and key pieces of information only being mere clicks away for any users. In the main navigation bar (which is constantly fixed on the page and follows the user throughout their experience by implementing ```display: sticky;```) the key pages which of are particular interest to any perspective employers are located. These pages include the home page, about me page, projects page and blog posts page. This is done in an effort to make navigation around the portfolio simple and time efficient, minimising the number of inputs users need to complete to find what they are interested in.
+As seen in the above sightmap of the portfolio, the portfolios navigation is quite simple, with all pages linkning together and key pieces of information only being mere clicks away for any users. In the main navigation bar (which is constantly fixed on the page and follows the user throughout their experience by implementing ```display: sticky;```) the key pages which of are particular interest to any perspective employers are located here. These pages include the home page, about me page, projects page and blog posts page. This is done in an effort to make navigation around the portfolio simple and time efficient, minimising the number of inputs users need to complete to find what they are interested in.
 
 ![Image of nav bar within the portfolio](images/generalNavigation.png)
 
 ### Navigation around the blog posts pages
 
-Following on from this, there are five child pages of the blog post page which each display a blog sample required by the assessment criteria. On top of the previous mentioned main navigation bar throughout the portfolio, a similar bar will display when the user is within one of these blog sample pages. Again, this was completed with ease of user experience in mind to again mitigate the number of inputs required by the user to make their way around the portfolio. The names of the blog sample pages were opted to fill out this navigation bar as, in my mind, the titles of these interesting were more likely to draw in perspective readers as opposed to solely using date stamps.
+Following on from this, there are five child pages of the blog post page which each display a blog sample required by the assessment criteria.
 
-However, unlike the main navigation bar, I opted to remove this navigation bar for mobile users as it seemed to both takeway from precious screen realestate and it was extremely awkward to inplement.
+On top of the previous mentioned main navigation bar throughout the portfolio, a similar bar will display when the user is within one of these blog sample pages. Again, this was completed with ease of user experience in mind to again mitigate the number of inputs required by the user to make their way around the portfolio.
+
+The names of the blog sample pages were opted to fill out this navigation bar as, in my mind, the titles of these blog posts were interesting and were more likely to draw in perspective readers as opposed to solely using date stamps.
+
+However, unlike the main navigation bar, I opted to remove this navigation bar for mobile users as it seemed to both takeway from precious screen real estate and it was extremely awkward to inplement.
 
 ![Image of blog post navigation bar](images/blogPostsNav.png)
 
@@ -30,9 +42,17 @@ However, unlike the main navigation bar, I opted to remove this navigation bar f
 
 ### Aesthic of the portfolio
 
-The aesthic of the portfolio is simple, there are no crazy animations that make images fly in or coloages of images. Everything is displayed where it should be while utilising a futuristic colour pallete that allows key information to easily grab the attention of readers.
+The aesthic of the portfolio is simple, there are no crazy animations that make images fly or in or scale to crazy sizes.
 
-The combination of dark blue backgrounds for components with bright aqua for key headings, in my mind, achieves this aesthic. The choice of providing shadow border backgrounds for all images adds to that futristic feel of the portfolio. An example of this can be seen in the image below which is a screenshot from the projects page of the portfolio.
+Everything is displayed where it should be while utilising a futuristic colour pallete that allows key information to easily grab the attention of readers.
+
+Most if not all information are displayed in what I call "tiles", which layout information nicely and ensure everything has enough room to actually work.
+
+The combination of dark blue backgrounds for these tiles in combination with bright aqua for key headings, in my mind, achieves this simple/futuristic aesthic.
+
+The choice of providing shadow border backgrounds for all images adds to that futristic feel of the portfolio and provides importance to the images as it is more likely to draw in the users attention.
+
+**An example of this can be seen in the image below which is a screenshot from the projects page of the portfolio.**
 
 ![Image of projects page](images/projectsPage.png)
 
@@ -90,8 +110,8 @@ However, all there are no wasted components. Everything created served a purpose
 
 **These components were reused across multiple pages of the portfolio.**
 
-* **Navbar** - Designed to provide for easy navigation around the portfolio. **Also includes a resume link which will automatically download a copy of my resume to the users downloads folder on their device for ease of access.** 
-* **Blog Post Navbar** - Designed to provide for easy navigation around the sample blog posts which are child pages of the blogPost.html page in the hopes of engaging the user to read further blog posts without them having click back to blog posts page. One click is more likely to capitivate users to continue rather than having to complete two clicks. 
+* **Navbar** - Designed to provide for easy navigation around the portfolio. **Also includes a resume link which will automatically download a copy of my resume to the users downloads folder on their device for ease of access.**
+* **Blog Post Navbar** - Designed to provide for easy navigation around the sample blog posts which are child pages of the blogPost.html page in the hopes of engaging the user to read further blog posts without them having click back to blog posts page. One click is more likely to capitivate users to continue rather than having to complete two clicks.
 * **Contact Me** - Provided easy access to information which would be useful to contact me if any potential employers were interested in doing so. Includes both a phone number and email which I can be contacted on.
 * **Footer** - A footer which allows for easy access to social media outlets which serve a profesional purpose and appropriate for the target auience including; Github, LinkedIn and Instagram.
 
@@ -103,10 +123,10 @@ However, all there are no wasted components. Everything created served a purpose
 
 ### About Me Page Components
 
-* **Hero Container** - Allowed for an introductory statement regarding the page as well as an image of myself, engagement with audience as it fits the overall aesthic of the page created. 
-* **My Skills** - Utilised to display information regarding any hard-skills, learnt throughout my time at Coder Academy and in my own time  skills  are of relevence to full-stack web development. Also utilised to display any soft-skills which may be of relevence. It's simplicity is leaned upon as it is a short snapshot of my skills 
-* **My Interests** - Utilised to display information regarding my interests so any perpective employer can connect with me on a personal level. Created to display how I would fit culturally in any work environment. Simple in its design, however, its simplicity will allow for ease of access to users to gain a better understanding of who I am as a person. 
-* **My Journey Container** - Created to display what has lead me to pursue a career in web development and my past experiences in the workforce. Again, working on the previosly used components, will allow any perspective employer who views this portfolio to build a wholistic picture of who I am as a person and what I hope to achieve in this industry. Smaller screens will not display images, however, users utilising tablets or desktops will see images that correspond to each stage of my journey. 
+* **Hero Container** - Allowed for an introductory statement regarding the page as well as an image of myself, engagement with audience as it fits the overall aesthic of the page created.
+* **My Skills** - Utilised to display information regarding any hard-skills, learnt throughout my time at Coder Academy and in my own time  skills  are of relevence to full-stack web development. Also utilised to display any soft-skills which may be of relevence. It's simplicity is leaned upon as it is a short snapshot of my skills
+* **My Interests** - Utilised to display information regarding my interests so any perpective employer can connect with me on a personal level. Created to display how I would fit culturally in any work environment. Simple in its design, however, its simplicity will allow for ease of access to users to gain a better understanding of who I am as a person.
+* **My Journey Container** - Created to display what has lead me to pursue a career in web development and my past experiences in the workforce. Again, working on the previosly used components, will allow any perspective employer who views this portfolio to build a wholistic picture of who I am as a person and what I hope to achieve in this industry. Smaller screens will not display images, however, users utilising tablets or desktops will see images that correspond to each stage of my journey.
 
 ### Projects Page Components
 
@@ -114,7 +134,7 @@ However, all there are no wasted components. Everything created served a purpose
 
 ### Blog Post Components
 
-* **Blog List** - This component displays a list of links which take the user to the corresponding sample post. There are five in total and are labelled in with both the blog title and date published. On smaller screens, images will fill the background of each of the links containers. On larger screens, these background images will no longer appear and instead be located adjacent to the blog links container. This has been created utilising nested ```<div>``` tags within the ```<HTML>``` page. The use of images along with the links in this style will engage the user to be intrigued about the contents of the blog post and hopefully be motivated to read further. 
+* **Blog List** - This component displays a list of links which take the user to the corresponding sample post. There are five in total and are labelled in with both the blog title and date published. On smaller screens, images will fill the background of each of the links containers. On larger screens, these background images will no longer appear and instead be located adjacent to the blog links container. This has been created utilising nested ```<div>``` tags within the ```<HTML>``` page. The use of images along with the links in this style will engage the user to be intrigued about the contents of the blog post and hopefully be motivated to read further.
 
 ### Sample Blog Post Components
 
