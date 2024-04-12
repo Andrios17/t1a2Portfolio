@@ -90,8 +90,8 @@ However, all there are no wasted components. Everything created served a purpose
 
 **These components were reused across multiple pages of the portfolio.**
 
-* **Navbar** - Designed to provide for easy navigation around the portfolio
-* **Blog Post Navbar** - Designed to provide for easy navigation around the sample blog posts which are child pages of the blogPost.html page.
+* **Navbar** - Designed to provide for easy navigation around the portfolio. **Also includes a resume link which will automatically download a copy of my resume to the users downloads folder on their device for ease of access.** 
+* **Blog Post Navbar** - Designed to provide for easy navigation around the sample blog posts which are child pages of the blogPost.html page in the hopes of engaging the user to read further blog posts without them having click back to blog posts page. One click is more likely to capitivate users to continue rather than having to complete two clicks. 
 * **Contact Me** - Provided easy access to information which would be useful to contact me if any potential employers were interested in doing so. Includes both a phone number and email which I can be contacted on.
 * **Footer** - A footer which allows for easy access to social media outlets which serve a profesional purpose and appropriate for the target auience including; Github, LinkedIn and Instagram.
 
@@ -99,4 +99,45 @@ However, all there are no wasted components. Everything created served a purpose
 
 ### Home Page Components
 
-* **Hero Container** - 
+* **Hero Container** - Allowed for an introductory statement about myself as well as an image of myself. Responsive depending on the screenwidth of the user.
+
+### About Me Page Components
+
+* **Hero Container** - Allowed for an introductory statement regarding the page as well as an image of myself, engagement with audience as it fits the overall aesthic of the page created. 
+* **My Skills** - Utilised to display information regarding any hard-skills, learnt throughout my time at Coder Academy and in my own time  skills  are of relevence to full-stack web development. Also utilised to display any soft-skills which may be of relevence. It's simplicity is leaned upon as it is a short snapshot of my skills 
+* **My Interests** - Utilised to display information regarding my interests so any perpective employer can connect with me on a personal level. Created to display how I would fit culturally in any work environment. Simple in its design, however, its simplicity will allow for ease of access to users to gain a better understanding of who I am as a person. 
+* **My Journey Container** - Created to display what has lead me to pursue a career in web development and my past experiences in the workforce. Again, working on the previosly used components, will allow any perspective employer who views this portfolio to build a wholistic picture of who I am as a person and what I hope to achieve in this industry. Smaller screens will not display images, however, users utilising tablets or desktops will see images that correspond to each stage of my journey. 
+
+### Projects Page Components
+
+* **Projects** - Integrated to display the projects I have completed throughout my time at Coder Academy. Utilises a flexbox display and is responsive depending on screen size. Will begin in a coloumn flexbox display on mobile and shift to a row display on tablet and desktop devices. This is completed in an effort to avoid using unused screen real estate and be easier for users on bigger screens to view all important information and be engaged with.
+
+### Blog Post Components
+
+* **Blog List** - This component displays a list of links which take the user to the corresponding sample post. There are five in total and are labelled in with both the blog title and date published. On smaller screens, images will fill the background of each of the links containers. On larger screens, these background images will no longer appear and instead be located adjacent to the blog links container. This has been created utilising nested ```<div>``` tags within the ```<HTML>``` page. The use of images along with the links in this style will engage the user to be intrigued about the contents of the blog post and hopefully be motivated to read further. 
+
+### Sample Blog Post Components
+
+* **Published Blog Components** - A component to hold both an image relevent to and published blog material. Lorem text has been utilised as placeholder text. Styling is again simple however, display all necessary information to engage the user.
+
+## Screenshots of Final Portfolio
+
+### Home Page
+
+![Screenshot of Final Home Page](images/finalHomePage.png)
+
+### About Me Page
+
+![Screenshot of About Me Page](images/finalAboutMePage.png)
+
+### Projects Page
+
+![Screenshot of Projects Page](images/finalProjectsPage.png)
+
+### Blog Posts Page
+
+![Screenshot of Blogs Posts Page](images/finalBlogPosts.png)
+
+### Published Sample Blog Page
+
+![Screenshot of Published Sample Blog Page](images/finalPublishBlogPage.png)
